@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--基本信息-->
+    <description>Lyx Lab project for Spring Boot</description>
+    <name>lab</name>
+    <packaging>pom</packaging>
+
+    <!--项目说明-->
+    <groupId>com.lyx</groupId>
+    <artifactId>lab</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <lab-core.version>0.0.1-SNAPSHOT</lab-core.version>
+    </properties>
+
+    <!-- 模块说明：这里声明多个子模块 -->
+    <modules>
+        <module>lab-core</module>
+        <!--<module>lab-web</module>-->
+    </modules>
+
+    <!-- 版本说明：这里统一管理依赖的版本号 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.lyx</groupId>
+                <artifactId>lab-core</artifactId>
+                <version>${lab-core.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
