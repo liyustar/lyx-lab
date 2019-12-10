@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+
+logging:
+  level:
+    root: info
+    org.h2: debug
+    org.springframework.jdbc.datasource: debug
+    com.lyx.lab.web: debug
+
+mybatis:
+  typeAliasesPackage: com.lyx.lab.web.model
+  mapperLocations: classpath:mapper/*.xml
