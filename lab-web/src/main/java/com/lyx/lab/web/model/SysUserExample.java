@@ -174,63 +174,213 @@ public class SysUserExample {
             return (Criteria) this;
         }
 
-        public Criteria andAgeIsNull() {
-            addCriterion("age is null");
+        public Criteria andPasswordIsNull() {
+            addCriterion("password is null");
             return (Criteria) this;
         }
 
-        public Criteria andAgeIsNotNull() {
-            addCriterion("age is not null");
+        public Criteria andPasswordIsNotNull() {
+            addCriterion("password is not null");
             return (Criteria) this;
         }
 
-        public Criteria andAgeEqualTo(Integer value) {
-            addCriterion("age =", value, "age");
+        public Criteria andPasswordEqualTo(String value) {
+            addCriterion("password =", value, "password");
             return (Criteria) this;
         }
 
-        public Criteria andAgeNotEqualTo(Integer value) {
-            addCriterion("age <>", value, "age");
+        public Criteria andPasswordNotEqualTo(String value) {
+            addCriterion("password <>", value, "password");
             return (Criteria) this;
         }
 
-        public Criteria andAgeGreaterThan(Integer value) {
-            addCriterion("age >", value, "age");
+        public Criteria andPasswordGreaterThan(String value) {
+            addCriterion("password >", value, "password");
             return (Criteria) this;
         }
 
-        public Criteria andAgeGreaterThanOrEqualTo(Integer value) {
-            addCriterion("age >=", value, "age");
+        public Criteria andPasswordGreaterThanOrEqualTo(String value) {
+            addCriterion("password >=", value, "password");
             return (Criteria) this;
         }
 
-        public Criteria andAgeLessThan(Integer value) {
-            addCriterion("age <", value, "age");
+        public Criteria andPasswordLessThan(String value) {
+            addCriterion("password <", value, "password");
             return (Criteria) this;
         }
 
-        public Criteria andAgeLessThanOrEqualTo(Integer value) {
-            addCriterion("age <=", value, "age");
+        public Criteria andPasswordLessThanOrEqualTo(String value) {
+            addCriterion("password <=", value, "password");
             return (Criteria) this;
         }
 
-        public Criteria andAgeIn(List<Integer> values) {
-            addCriterion("age in", values, "age");
+        public Criteria andPasswordLike(String value) {
+            addCriterion("password like", value, "password");
             return (Criteria) this;
         }
 
-        public Criteria andAgeNotIn(List<Integer> values) {
-            addCriterion("age not in", values, "age");
+        public Criteria andPasswordNotLike(String value) {
+            addCriterion("password not like", value, "password");
             return (Criteria) this;
         }
 
-        public Criteria andAgeBetween(Integer value1, Integer value2) {
-            addCriterion("age between", value1, value2, "age");
+        public Criteria andPasswordIn(List<String> values) {
+            addCriterion("password in", values, "password");
             return (Criteria) this;
         }
 
-        public Criteria andAgeNotBetween(Integer value1, Integer value2) {
-            addCriterion("age not between", value1, value2, "age");
+        public Criteria andPasswordNotIn(List<String> values) {
+            addCriterion("password not in", values, "password");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordBetween(String value1, String value2) {
+            addCriterion("password between", value1, value2, "password");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordNotBetween(String value1, String value2) {
+            addCriterion("password not between", value1, value2, "password");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5IsNull() {
+            addCriterion("password_md5 is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5IsNotNull() {
+            addCriterion("password_md5 is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5EqualTo(String value) {
+            addCriterion("password_md5 =", value, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5NotEqualTo(String value) {
+            addCriterion("password_md5 <>", value, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5GreaterThan(String value) {
+            addCriterion("password_md5 >", value, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5GreaterThanOrEqualTo(String value) {
+            addCriterion("password_md5 >=", value, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5LessThan(String value) {
+            addCriterion("password_md5 <", value, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5LessThanOrEqualTo(String value) {
+            addCriterion("password_md5 <=", value, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5Like(String value) {
+            addCriterion("password_md5 like", value, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5NotLike(String value) {
+            addCriterion("password_md5 not like", value, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5In(List<String> values) {
+            addCriterion("password_md5 in", values, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5NotIn(List<String> values) {
+            addCriterion("password_md5 not in", values, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5Between(String value1, String value2) {
+            addCriterion("password_md5 between", value1, value2, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordMd5NotBetween(String value1, String value2) {
+            addCriterion("password_md5 not between", value1, value2, "passwordMd5");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaIsNull() {
+            addCriterion("password_sha is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaIsNotNull() {
+            addCriterion("password_sha is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaEqualTo(String value) {
+            addCriterion("password_sha =", value, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaNotEqualTo(String value) {
+            addCriterion("password_sha <>", value, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaGreaterThan(String value) {
+            addCriterion("password_sha >", value, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaGreaterThanOrEqualTo(String value) {
+            addCriterion("password_sha >=", value, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaLessThan(String value) {
+            addCriterion("password_sha <", value, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaLessThanOrEqualTo(String value) {
+            addCriterion("password_sha <=", value, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaLike(String value) {
+            addCriterion("password_sha like", value, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaNotLike(String value) {
+            addCriterion("password_sha not like", value, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaIn(List<String> values) {
+            addCriterion("password_sha in", values, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaNotIn(List<String> values) {
+            addCriterion("password_sha not in", values, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaBetween(String value1, String value2) {
+            addCriterion("password_sha between", value1, value2, "passwordSha");
+            return (Criteria) this;
+        }
+
+        public Criteria andPasswordShaNotBetween(String value1, String value2) {
+            addCriterion("password_sha not between", value1, value2, "passwordSha");
             return (Criteria) this;
         }
     }

@@ -25,10 +25,10 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>com.lyx</groupId>-->
-            <!--<artifactId>lab-core</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.lyx</groupId>
+            <artifactId>lab-core</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>io.springfox</groupId>
