@@ -5,9 +5,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StopWatch;
+import org.springframework.util.StringUtils;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -22,7 +22,7 @@ import java.lang.reflect.Method;
 @Aspect
 @Component
 @Slf4j
-@Profile({"dev", "test"})
+//@Profile({"dev", "test"})
 public class WebLogAspect {
 
     /**
@@ -57,7 +57,9 @@ public class WebLogAspect {
         // 打印请求 url
         log.info("URL            : {}", request.getRequestURL().toString());
         // 打印描述信息
-        log.info("Description    : {}", methodDescription);
+        if (!StringUtils.isEmpty(methodDescription)) {
+            log.info("Description    : {}", methodDescription);
+        }
         // 打印 Http method
         log.info("HTTP Method    : {}", request.getMethod());
         // 打印调用 controller 的全路径以及执行方法

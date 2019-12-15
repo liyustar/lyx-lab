@@ -15,3 +15,9 @@ logging:
 mybatis:
   typeAliasesPackage: com.lyx.lab.web.model
   mapperLocations: classpath:mapper/*.xml
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
