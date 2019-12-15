@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.validation.constraints.NotBlank;
+
 /**
  * @Description CreateUserReq
  * @Author liyuxing
@@ -13,6 +15,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class CreateUserReq {
+
+    @NotBlank
     private String name;
+
+    @NotBlank
     private String password;
 }

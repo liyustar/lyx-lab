@@ -94,7 +94,15 @@ public class WebLogAspect {
     public Object doAround(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
-        Object result = proceedingJoinPoint.proceed();
+        Object result;
+        try {
+            result = proceedingJoinPoint.proceed();
+        } catch (Exception e) {
+            stopWatch.stop();
+            // 执行耗时
+            log.info("Time-Consuming : {} ms", stopWatch.getTotalTimeMillis());
+            throw e;
+        }
         stopWatch.stop();
         // 打印出参
         try {

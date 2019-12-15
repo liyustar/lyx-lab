@@ -2,13 +2,15 @@ package com.lyx.lab.web.controller;
 
 import com.lyx.lab.core.aspect.TrackTime;
 import com.lyx.lab.core.aspect.WebLog;
-import com.lyx.lab.core.bean.ResponseEntity;
+import com.lyx.lab.core.bean.ResponseObj;
 import com.lyx.lab.web.controller.request.CreateUserReq;
 import com.lyx.lab.web.model.SysUser;
 import com.lyx.lab.web.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 /**
  * @Description UserController
@@ -28,11 +30,11 @@ public class UserController {
      * @param req
      * @return
      */
-    @PostMapping()
+    @PostMapping
     @WebLog
-    public ResponseEntity createUser(@RequestBody CreateUserReq req) {
+    public ResponseObj createUser(@RequestBody @Valid CreateUserReq req) {
         service.createUser(req);
-        return ResponseEntity.success();
+        return ResponseObj.success();
     }
 
     /**
@@ -43,9 +45,9 @@ public class UserController {
     @GetMapping("/{name}")
     @WebLog
     @TrackTime
-    public ResponseEntity<SysUser> getUser(@PathVariable(value = "name") String name) {
+    public ResponseObj<SysUser> getUser(@PathVariable(value = "name") String name) {
         SysUser user = service.getUser(name);
-        return ResponseEntity.success(user);
+        return ResponseObj.success(user);
     }
 
 }
