@@ -6,12 +6,14 @@ import com.lyx.lab.web.mapper.SysUserMapper;
 import com.lyx.lab.web.model.SysUser;
 import com.lyx.lab.web.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * @Description UserServiceImpl
  * @Author liyuxing
  * @Date 2019-12-13
  */
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired

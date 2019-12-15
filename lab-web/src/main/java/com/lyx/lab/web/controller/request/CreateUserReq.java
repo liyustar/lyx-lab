@@ -1,5 +1,6 @@
 package com.lyx.lab.web.controller.request;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,6 +11,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
+@AllArgsConstructor
 public class CreateUserReq {
     private String name;
     private String password;
