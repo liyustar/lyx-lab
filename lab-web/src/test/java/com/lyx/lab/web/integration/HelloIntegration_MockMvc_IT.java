@@ -17,7 +17,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @SpringBootTest
 @AutoConfigureMockMvc
-public class HelloIntegration_MockMvc_Test {
+public class HelloIntegration_MockMvc_IT {
 
     @Test
     void helloTest(@Autowired MockMvc mockMvc) throws Exception {

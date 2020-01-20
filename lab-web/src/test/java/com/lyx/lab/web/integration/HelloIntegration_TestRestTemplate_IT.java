@@ -9,12 +9,12 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * @Description HelloIntegration_TestRestTemplate_Test
+ * @Description HelloIntegration_TestRestTemplate_IT
  * @Author liyuxing
  * @Date 2019-12-14
  */
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-public class HelloIntegration_TestRestTemplate_Test {
+public class HelloIntegration_TestRestTemplate_IT {
 
     @Test
     void helloTest(@Autowired TestRestTemplate restTemplate) {

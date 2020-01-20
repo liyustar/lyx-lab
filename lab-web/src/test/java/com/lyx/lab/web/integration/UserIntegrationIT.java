@@ -17,20 +17,20 @@ import java.util.LinkedHashMap;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * @Description UserIntegrationTest
+ * @Description UserIntegrationIT
  * @Author liyuxing
  * @Date 2019-12-14
  */
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @Import({WebLogAspect.class, TrackTimeAspect.class})
-public class UserIntegrationTest {
+public class UserIntegrationIT {
 
     @Autowired
     private TestRestTemplate restTemplate;
 
     @Test
     void createUserTest_success() {
-        CreateUserReq req = new CreateUserReq("apple2", "APPLE");
+        CreateUserReq req = new CreateUserReq("apple4", "APPLE");
         ResponseObj body = restTemplate.postForObject("/api/users", req, ResponseObj.class);
         assertThat(body).isNotNull();
     }
