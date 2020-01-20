@@ -24,6 +24,8 @@
         <java.version>1.8</java.version>
         <lab-core.version>0.0.1-SNAPSHOT</lab-core.version>
         <lab-web.version>0.0.1-SNAPSHOT</lab-web.version>
+        <lab-account-service.version>0.0.1-SNAPSHOT</lab-account-service.version>
+        <guava.version>27.1-jre</guava.version>
         <swagger-ui.version>2.9.2</swagger-ui.version>
         <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
         <pagehelper-spring-boot-starter.version>1.2.13</pagehelper-spring-boot-starter.version>
@@ -34,6 +36,7 @@
     <modules>
         <module>lab-core</module>
         <module>lab-web</module>
+        <module>lab-account-service</module>
     </modules>
 
     <!-- 版本说明：这里统一管理依赖的版本号 -->
@@ -49,6 +52,18 @@
                 <groupId>com.lyx</groupId>
                 <artifactId>lab-web</artifactId>
                 <version>${lab-web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.lyx</groupId>
+                <artifactId>lab-account-service</artifactId>
+                <version>${lab-account-service.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
             </dependency>
 
             <!-- Swagger -->

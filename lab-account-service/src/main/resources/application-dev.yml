@@ -1,0 +1,12 @@
+
+spring:
+  datasource:
+#    schema: classpath:db/schema-mysql.sql
+    #    data: classpath:db/data-mysql.sql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.101.128:3306/lablas?useSSL=false
+    username: root
+    password: root
+#    platform: mysql
+#    initialization-mode: always
+
